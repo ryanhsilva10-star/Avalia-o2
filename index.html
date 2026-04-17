@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <style>
+    *{
+           margin: 0%;
+           padding: auto;
+           width: auto;
+           height: auto;
+        }
+
+    .Inicio {
+    background: linear-gradient(to right, rgb(255, 0, 0), #d00000, #9b0000);
+    padding: 20px;
+    color: white;
+    height: 90%;
+
+    div{
+        flex: auto;
+        color: rgb(255, 255, 255);
+        background-color:#8f0000;
+        border-radius: 5px ;
+    }
+    .listinha{
+        background-color: #770000;
+        width: auto;
+        height: auto;
+    }
+   
+}
+
+    </style>
+<div class="Inicio">
+    <h1>ATIVIDADE PRATICA 2 - Sistema básico de controle de notas escolares.</h1>
+
+    <div>
+    <input type="text" id="novoAluno" placeholder="Nome do Aluno">
+
+    <!--Notas-->
+    <input type="number" id="nota1" placeholder="Avaliação1 ">
+    <input type="number" id="nota2" placeholder="Avaliação2">
+    <button id="btnCadastrar">Cadastrar</button>
+    </div>
+    <br>
+
+    <!--Listar-->
+    <div class="listinha">
+        <button id="btnListar">Listar</button>
+        <p id="Listado"></p>
+    </div>
+</div>
+   
+    
+</body>
+</html>
